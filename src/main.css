@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Ledger&display=swap");
+
+:root {
+  --text: rgb(2, 35, 21);
+  --background: rgb(228, 248, 244);
+
+  --primary: rgb(29, 66, 50);
+  --secondary: rgb(2, 35, 21);
+  --accent: rgb(105, 182, 164);
+
+  /* Magic / sparkle colors */
+  --magic-dark: rgb(29, 66, 50);
+  --magic-mid: rgb(105, 182, 164);
+  --magic-light: rgb(60, 82, 76);
+  --magic-glow: rgb(15, 85, 24);
+}
+
+body {
+  font-family: "Ledger", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ledger", serif;
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.442rem;
+}
+
+h3 {
+  font-size: 1.954rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small {
+  font-size: 0.8rem;
+}

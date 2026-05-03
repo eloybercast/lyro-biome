@@ -1,0 +1,230 @@
+---
+import "../main.css";
+import "./index.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Lyro Biome</title>
+  </head>
+
+  <body>
+    <main class="landing">
+      <nav class="nav">
+        <a class="navLogo" href="/">
+          <img src="/logo.png" alt="Lyro Biome logo" />
+        </a>
+
+        <div class="navLinks">
+          <a href="#products">Productos</a>
+          <a href="#routine">Rutina</a>
+          <a href="#microbiome">Microbioma</a>
+          <a href="#about">Nosotros</a>
+        </div>
+
+        <a class="navButton" href="#products">Comprar ahora</a>
+      </nav>
+
+      <section class="hero">
+        <video
+          class="heroVideo"
+          autoplay
+          muted
+          loop
+          playsinline
+          src="/background.mp4"></video>
+
+        <div class="heroContent">
+          <div class="heroText">
+            <h1 class="heroTitle">
+              <span class="heroTitleLine">Cuidado para tu piel</span>
+              <span class="heroTitleLine">
+                con <strong class="heroBrand">Lyro Biome</strong>
+              </span>
+            </h1>
+
+            <p>
+              Skincare pensado para limpiar suavemente, apoyar la barrera
+              cutánea y mantener el equilibrio del microbioma de tu piel.
+            </p>
+          </div>
+
+          <div class="heroVisual">
+            <div class="lyroCarousel">
+              <img
+                class="lyroImage active"
+                src="/lyro-1.webp"
+                alt="Producto Lyro Biome 1"
+              />
+
+              <img
+                class="lyroImage next"
+                src="/lyro-2.webp"
+                alt="Producto Lyro Biome 2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="transition_blob"></div>
+      </section>
+
+      <section id="products" class="products">
+        <div class="productsContent">
+          <div class="productsHeader">
+            <small>Nuestra línea</small>
+
+            <h2>Productos para una piel calmada, fresca y equilibrada.</h2>
+
+            <p>
+              Todos los productos de nuestra línea contienen componentes para
+              todo tipo de piel, además de ser calmantes y frescos, lo que ayuda
+              en pieles con rojeces o sensibles.
+            </p>
+          </div>
+
+          <div class="productsGrid">
+            <article class="productCard">
+              <div class="productImage">
+                <img src="/lyro-1.webp" alt="Limpiador de espuma Lyro Biome" />
+              </div>
+
+              <div class="productInfo">
+                <small>Paso 1</small>
+
+                <h3>Limpiador de espuma</h3>
+
+                <p>
+                  Tiene componentes suaves y gentiles para la piel. Uno de ellos
+                  es biodegradable. Está diseñado para limpiar a profundidad sin
+                  dañar el microbioma ni alterar la barrera de la piel.
+                </p>
+
+                <p>
+                  Su fórmula contiene pantenol y glicerina, lo que permite
+                  limpiar, calmar y seguir hidratando tu piel por dentro.
+                </p>
+              </div>
+            </article>
+
+            <article class="productCard">
+              <div class="productImage">
+                <img src="/lyro-2.webp" alt="Crema hidratante Lyro Biome" />
+              </div>
+
+              <div class="productInfo">
+                <small>Paso 2</small>
+
+                <h3>Crema hidratante</h3>
+
+                <p>
+                  Contiene componentes calmantes y suaves que hidratan y
+                  refuerzan la barrera cutánea.
+                </p>
+
+                <p>
+                  Gracias al ácido hialurónico y la centella asiática, ayuda a
+                  reparar la piel y mejorar la apariencia de líneas de
+                  expresión.
+                </p>
+              </div>
+            </article>
+
+            <article class="productCard">
+              <div class="productImage">
+                <img src="/lyro-3.webp" alt="BB cream con color Lyro Biome" />
+              </div>
+
+              <div class="productInfo">
+                <small>Paso 3</small>
+
+                <h3>BB cream con color</h3>
+
+                <p>
+                  Unifica el tono de la piel, hidrata y protege gracias al ácido
+                  hialurónico y la vitamina E.
+                </p>
+
+                <p>
+                  Funciona como tratamiento dentro de la línea y como maquillaje
+                  en solo un paso.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer">
+        <h1>
+          Tu rutina empieza cuidando tu
+          <span class="magic">
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                ></path>
+              </svg>
+            </span>
+
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                ></path>
+              </svg>
+            </span>
+
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                ></path>
+              </svg>
+            </span>
+
+            <span class="magic-text">microbioma</span>
+          </span>
+          y su
+          <span class="magic">
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                ></path>
+              </svg>
+            </span>
+
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                ></path>
+              </svg>
+            </span>
+
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                ></path>
+              </svg>
+            </span>
+
+            <span class="magic-text">equilibrio natural</span>
+          </span>
+          .
+        </h1>
+
+        <a class="footerButton" href="#products">Ver productos</a>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
