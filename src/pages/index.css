@@ -366,6 +366,7 @@
 .footer h1 {
   max-width: 1100px;
 
+  font-size: clamp(2.4rem, 5vw, 4rem);
   line-height: 1.05;
   letter-spacing: -0.04em;
 }
@@ -584,12 +585,21 @@
   }
 
   .footer {
-    padding: 90px 22px;
+    min-height: 70vh;
+    padding: 80px 22px;
+    gap: 26px;
   }
 
   .footer h1 {
-    max-width: 680px;
-    line-height: 1.1;
+    max-width: 620px;
+
+    font-size: clamp(2rem, 7vw, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+  }
+
+  .magic-star {
+    --size: 14px;
   }
 }
 
@@ -634,19 +644,22 @@
   }
 
   .footer {
-    padding: 76px 16px;
+    min-height: 65vh;
+    padding: 64px 16px;
+    gap: 22px;
   }
 
   .footer h1 {
-    line-height: 1.12;
-    letter-spacing: -0.03em;
+    font-size: clamp(1.7rem, 8vw, 2.25rem);
+    line-height: 1.16;
+    letter-spacing: -0.025em;
   }
 
   .footerButton {
-    padding: 12px 18px;
+    padding: 11px 16px;
   }
 
   .magic-star {
-    --size: 16px;
+    --size: 12px;
   }
 }
