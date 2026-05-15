@@ -1,110 +1,28 @@
 ---
 import "../main.css";
 import "./index.css";
-
-const siteUrl = "https://lyro-biome.vercel.app";
-const canonicalUrl = `${siteUrl}/`;
-const instagramUrl = "https://www.instagram.com/lyro_biome/";
-
-const title =
-  "Lyro Biome | Skincare para el microbioma de la piel | Microbiome Skincare";
-
-const description =
-  "Lyro Biome es una línea de skincare pensada para limpiar suavemente, hidratar, calmar la piel sensible, apoyar la barrera cutánea y mantener el equilibrio natural del microbioma de la piel.";
-
-const keywords =
-  "Lyro Biome, lyro biome, skincare, skin care, microbiome skincare, skin microbiome, microbioma de la piel, cuidado de la piel, rutina facial, facial routine, rutina de skincare, skincare routine, limpiador facial, facial cleanser, limpiador de espuma, foam cleanser, crema hidratante, moisturizer, hidratante facial, face moisturizer, BB cream, bb cream con color, tinted bb cream, piel sensible, sensitive skin, piel con rojeces, redness, piel calmada, calm skin, piel fresca, fresh skin, piel equilibrada, balanced skin, barrera cutánea, skin barrier, cuidado de la barrera cutánea, skin barrier care, ácido hialurónico, hyaluronic acid, centella asiática, centella asiatica, cica skincare, pantenol, panthenol, glicerina, glycerin, vitamina E, vitamin E, hidratación facial, facial hydration, productos para piel sensible, sensitive skin products, cosmética facial, facial cosmetics, cuidado facial diario, daily skincare, belleza natural, natural beauty, piel saludable, healthy skin, productos calmantes, soothing skincare, productos hidratantes, hydrating skincare, tratamiento facial, facial treatment, maquillaje y skincare, makeup skincare, maquillaje hidratante, hydrating makeup, rutina de 3 pasos, 3 step skincare routine, skincare suave, gentle skincare, cuidado facial suave, gentle face care, microbiome friendly skincare, skin balance, natural skin balance, calmante facial, soothing face care, piel luminosa, glowing skin, cuidado facial coreano, korean skincare inspired, microbiome beauty, microbiome cosmetics, beauty routine, facial beauty products, skin hydration, redness relief skincare, sensitive face cream, face foam cleanser, hydrating bb cream, glow skincare, clean beauty skincare, soft skincare, minimalist skincare, skincare brand, skincare products, skin repair, skin soothing, barrier repair cream, moisturizing cream, facial foam wash, daily face cleanser, healthy microbiome skincare, microbiota facial, cosmética hidratante, productos faciales, skincare españa, skincare europe, skincare brand spain";
-
-const longSeoTextEs = `
-Lyro Biome es una marca enfocada en el cuidado del microbioma de la piel, la hidratación profunda y el equilibrio natural de la barrera cutánea. Nuestra línea de skincare está diseñada para personas con piel sensible, piel con rojeces, piel deshidratada y personas que buscan una rutina facial suave y efectiva.
-
-Nuestros productos ayudan a limpiar, hidratar y proteger la piel utilizando ingredientes como ácido hialurónico, centella asiática, pantenol, glicerina y vitamina E. Lyro Biome busca crear una experiencia de skincare calmante, fresca y ligera para uso diario.
-
-Si buscas productos de skincare para piel sensible, limpiadores suaves, hidratantes faciales ligeros o BB creams con hidratación y acabado natural, Lyro Biome ofrece una rutina pensada para mantener la piel equilibrada y saludable.
-
-Nuestra filosofía se basa en el respeto por el microbioma cutáneo, la barrera de la piel y la hidratación diaria. Cada fórmula está pensada para ayudar a mantener la suavidad, elasticidad y apariencia saludable del rostro.
-`;
-
-const longSeoTextEn = `
-Lyro Biome is a skincare brand focused on supporting the skin microbiome, hydration, skin barrier balance and sensitive skin care. Our skincare products are designed to gently cleanse, hydrate and soothe the skin while maintaining a healthy skin barrier.
-
-Our formulas include ingredients such as hyaluronic acid, centella asiatica, panthenol, glycerin and vitamin E to help provide hydration, softness and skin comfort for everyday skincare routines.
-
-Lyro Biome products are suitable for people looking for gentle skincare, microbiome friendly skincare, soothing skincare, hydrating skincare and skincare for redness prone or sensitive skin.
-
-Our mission is to create skincare products that support healthy looking skin, balanced hydration and a calm, refreshed complexion through simple and effective daily skincare routines.
-`;
-
-const schema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      name: "Lyro Biome",
-      url: siteUrl,
-      logo: `${siteUrl}/logo.png`,
-      sameAs: [instagramUrl],
-      description,
-    },
-    {
-      "@type": "WebSite",
-      name: "Lyro Biome",
-      url: siteUrl,
-      description,
-      inLanguage: ["es", "en"],
-    },
-    {
-      "@type": "Brand",
-      name: "Lyro Biome",
-      url: siteUrl,
-      logo: `${siteUrl}/logo.png`,
-    },
-    {
-      "@type": "Product",
-      name: "Limpiador de espuma Lyro Biome",
-      brand: {
-        "@type": "Brand",
-        name: "Lyro Biome",
-      },
-      description:
-        "Limpiador facial suave pensado para limpiar profundamente sin alterar el microbioma ni la barrera de la piel.",
-      image: `${siteUrl}/lyro-1.webp`,
-    },
-    {
-      "@type": "Product",
-      name: "Crema hidratante Lyro Biome",
-      brand: {
-        "@type": "Brand",
-        name: "Lyro Biome",
-      },
-      description:
-        "Crema hidratante calmante con ácido hialurónico y centella asiática.",
-      image: `${siteUrl}/lyro-2.webp`,
-    },
-    {
-      "@type": "Product",
-      name: "BB Cream con color Lyro Biome",
-      brand: {
-        "@type": "Brand",
-        name: "Lyro Biome",
-      },
-      description:
-        "BB cream hidratante con color y vitamina E para unificar el tono de la piel.",
-      image: `${siteUrl}/lyro-3.webp`,
-    },
-  ],
-};
 ---
 
 <html lang="es">
   <head>
     <meta charset="utf-8" />
 
-    <title>{title}</title>
+    <title>Lyro Biome | Skincare para el microbioma de la piel</title>
 
-    <meta name="title" content={title} />
-    <meta name="description" content={description} />
-    <meta name="keywords" content={keywords} />
+    <meta
+      name="title"
+      content="Lyro Biome | Skincare para el microbioma de la piel"
+    />
+
+    <meta
+      name="description"
+      content="Lyro Biome es una línea de skincare para limpiar suavemente, hidratar, calmar la piel sensible, apoyar la barrera cutánea y cuidar el equilibrio natural del microbioma de la piel."
+    />
+
+    <meta
+      name="keywords"
+      content="Lyro Biome, lyro biome, skincare, skin care, microbiome skincare, skin microbiome, microbioma de la piel, cuidado de la piel, rutina facial, facial routine, rutina de skincare, skincare routine, limpiador facial, facial cleanser, limpiador de espuma, foam cleanser, crema hidratante, moisturizer, hidratante facial, face moisturizer, BB cream, bb cream con color, tinted bb cream, piel sensible, sensitive skin, piel con rojeces, redness, piel calmada, calm skin, piel fresca, fresh skin, piel equilibrada, balanced skin, barrera cutánea, skin barrier, cuidado de la barrera cutánea, skin barrier care, ácido hialurónico, hyaluronic acid, centella asiática, centella asiatica, cica skincare, pantenol, panthenol, glicerina, glycerin, vitamina E, vitamin E, hidratación facial, facial hydration, productos para piel sensible, sensitive skin products, cosmética facial, facial cosmetics, cuidado facial diario, daily skincare, belleza natural, natural beauty, piel saludable, healthy skin, productos calmantes, soothing skincare, productos hidratantes, hydrating skincare, tratamiento facial, facial treatment, maquillaje y skincare, makeup skincare, maquillaje hidratante, hydrating makeup, rutina de 3 pasos, 3 step skincare routine, skincare suave, gentle skincare, cuidado facial suave, gentle face care, microbiome friendly skincare, skin balance, natural skin balance, calmante facial, soothing face care, piel luminosa, glowing skin"
+    />
 
     <meta
       name="robots"
@@ -115,46 +33,151 @@ const schema = {
     <meta name="creator" content="Lyro Biome" />
     <meta name="publisher" content="Lyro Biome" />
 
-    <meta name="language" content="Spanish" />
-    <meta name="revisit-after" content="1 days" />
-    <meta name="rating" content="general" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
 
     <meta name="theme-color" content="#ffffff" />
 
     <meta name="generator" content={Astro.generator} />
 
-    <link rel="canonical" href={canonicalUrl} />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="rating" content="general" />
 
-    <link rel="alternate" hreflang="es" href={canonicalUrl} />
-    <link rel="alternate" hreflang="en" href={canonicalUrl} />
-    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
+    <meta
+      property="og:type"
+      content="website"
+    />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <meta
+      property="og:site_name"
+      content="Lyro Biome"
+    />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={`${siteUrl}/logo.png`} />
-    <meta property="og:site_name" content="Lyro Biome" />
-    <meta property="og:locale" content="es_ES" />
+    <meta
+      property="og:title"
+      content="Lyro Biome | Skincare para el microbioma de la piel"
+    />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content={canonicalUrl} />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={`${siteUrl}/logo.png`} />
+    <meta
+      property="og:description"
+      content="Skincare pensado para limpiar suavemente, hidratar la piel y apoyar el equilibrio natural del microbioma."
+    />
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta
+      property="og:url"
+      content="https://lyro-biome.vercel.app/"
+    />
 
-    <meta name="format-detection" content="telephone=no" />
+    <meta
+      property="og:image"
+      content="https://lyro-biome.vercel.app/logo.png"
+    />
+
+    <meta
+      property="og:locale"
+      content="es_ES"
+    />
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content="Lyro Biome | Skincare para el microbioma de la piel"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Microbiome skincare diseñado para limpiar, hidratar y cuidar la barrera de la piel."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://lyro-biome.vercel.app/logo.png"
+    />
+
+    <link
+      rel="canonical"
+      href="https://lyro-biome.vercel.app/"
+    />
+
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://lyro-biome.vercel.app/"
+    />
+
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://lyro-biome.vercel.app/"
+    />
+
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://lyro-biome.vercel.app/"
+    />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+
+    <link
+      rel="icon"
+      href="/favicon.ico"
+    />
+
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes"
+    />
+
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="default"
+    />
+
+    <meta
+      name="format-detection"
+      content="telephone=no"
+    />
 
     <script type="application/ld+json">
-      {JSON.stringify(schema)}
+      {
+        JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              name: "Lyro Biome",
+              url: "https://lyro-biome.vercel.app/",
+              logo: "https://lyro-biome.vercel.app/logo.png",
+              sameAs: [
+                "https://www.instagram.com/lyro_biome/"
+              ]
+            },
+            {
+              "@type": "WebSite",
+              name: "Lyro Biome",
+              url: "https://lyro-biome.vercel.app/",
+              inLanguage: ["es", "en"]
+            },
+            {
+              "@type": "Brand",
+              name: "Lyro Biome",
+              url: "https://lyro-biome.vercel.app/"
+            }
+          ]
+        })
+      }
     </script>
   </head>
 
@@ -162,11 +185,14 @@ const schema = {
     <main class="landing">
       <nav class="nav">
         <a class="navLogo" href="/">
-          <img src="/logo.png" alt="Lyro Biome logo skincare microbiome brand" />
+          <img src="/logo.png" alt="Lyro Biome logo" />
         </a>
 
         <div class="navLinks">
-    
+          <a href="#products">Productos</a>
+          <a href="#routine">Rutina</a>
+          <a href="#microbiome">Microbioma</a>
+          <a href="#about">Nosotros</a>
         </div>
 
         <a class="navButton" href="#products">Comprar ahora</a>
@@ -179,17 +205,12 @@ const schema = {
           muted
           loop
           playsinline
-          preload="auto"
-          aria-label="Lyro Biome skincare background video"
           src="/background.mp4"></video>
 
         <div class="heroContent">
           <div class="heroText">
             <h1 class="heroTitle">
-              <span class="heroTitleLine">
-                Cuidado para tu piel y microbioma
-              </span>
-
+              <span class="heroTitleLine">Cuidado para tu piel</span>
               <span class="heroTitleLine">
                 con <strong class="heroBrand">Lyro Biome</strong>
               </span>
@@ -199,11 +220,6 @@ const schema = {
               Skincare pensado para limpiar suavemente, apoyar la barrera
               cutánea y mantener el equilibrio del microbioma de tu piel.
             </p>
-
-            <p>
-              Microbiome skincare designed for sensitive skin, hydration,
-              healthy skin barrier support and balanced daily skincare routines.
-            </p>
           </div>
 
           <div class="heroVisual">
@@ -211,15 +227,13 @@ const schema = {
               <img
                 class="lyroImage active"
                 src="/lyro-1.webp"
-                alt="Limpiador de espuma Lyro Biome skincare microbiome cleanser"
-                loading="eager"
+                alt="Producto Lyro Biome 1"
               />
 
               <img
                 class="lyroImage next"
                 src="/lyro-2.webp"
-                alt="Crema hidratante Lyro Biome moisturizer sensitive skin"
-                loading="lazy"
+                alt="Producto Lyro Biome 2"
               />
             </div>
           </div>
@@ -231,32 +245,21 @@ const schema = {
       <section id="products" class="products">
         <div class="productsContent">
           <div class="productsHeader">
-            <small>Nuestra línea de skincare</small>
+            <small>Nuestra línea</small>
 
-            <h2>
-              Productos para una piel calmada, fresca, hidratada y equilibrada.
-            </h2>
+            <h2>Productos para una piel calmada, fresca y equilibrada.</h2>
 
             <p>
               Todos los productos de nuestra línea contienen componentes para
               todo tipo de piel, además de ser calmantes y frescos, lo que ayuda
               en pieles con rojeces o sensibles.
             </p>
-
-            <p>
-              Gentle skincare products created to support the skin microbiome,
-              facial hydration, skin barrier care and healthy glowing skin.
-            </p>
           </div>
 
           <div class="productsGrid">
             <article class="productCard">
               <div class="productImage">
-                <img
-                  src="/lyro-1.webp"
-                  alt="Limpiador de espuma Lyro Biome foam cleanser microbiome skincare"
-                  loading="lazy"
-                />
+                <img src="/lyro-1.webp" alt="Limpiador de espuma Lyro Biome" />
               </div>
 
               <div class="productInfo">
@@ -274,21 +277,12 @@ const schema = {
                   Su fórmula contiene pantenol y glicerina, lo que permite
                   limpiar, calmar y seguir hidratando tu piel por dentro.
                 </p>
-
-                <p>
-                  Gentle foam cleanser for sensitive skin, facial hydration,
-                  microbiome care and healthy skin barrier support.
-                </p>
               </div>
             </article>
 
             <article class="productCard">
               <div class="productImage">
-                <img
-                  src="/lyro-2.webp"
-                  alt="Crema hidratante Lyro Biome moisturizer skin barrier hydration"
-                  loading="lazy"
-                />
+                <img src="/lyro-2.webp" alt="Crema hidratante Lyro Biome" />
               </div>
 
               <div class="productInfo">
@@ -306,21 +300,12 @@ const schema = {
                   reparar la piel y mejorar la apariencia de líneas de
                   expresión.
                 </p>
-
-                <p>
-                  Hydrating moisturizer with hyaluronic acid and centella
-                  asiatica for sensitive skin and skin barrier repair support.
-                </p>
               </div>
             </article>
 
             <article class="productCard">
               <div class="productImage">
-                <img
-                  src="/lyro-3.webp"
-                  alt="BB cream con color Lyro Biome tinted BB cream skincare"
-                  loading="lazy"
-                />
+                <img src="/lyro-3.webp" alt="BB cream con color Lyro Biome" />
               </div>
 
               <div class="productInfo">
@@ -337,62 +322,8 @@ const schema = {
                   Funciona como tratamiento dentro de la línea y como maquillaje
                   en solo un paso.
                 </p>
-
-                <p>
-                  Hydrating BB cream with color for natural glow, even skin tone
-                  and lightweight skincare makeup.
-                </p>
               </div>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="microbiome" class="products">
-        <div class="productsContent">
-          <div class="productsHeader">
-            <small>Microbioma y skin barrier</small>
-
-            <h2>
-              Skincare enfocado en el equilibrio natural de tu piel.
-            </h2>
-
-            <p>{longSeoTextEs}</p>
-
-            <p>{longSeoTextEn}</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="products">
-        <div class="productsContent">
-          <div class="productsHeader">
-            <small>Sobre Lyro Biome</small>
-
-            <h2>
-              Skincare suave, hidratante y pensado para todos los días.
-            </h2>
-
-            <p>
-              Lyro Biome combina ingredientes hidratantes, calmantes y ligeros
-              para crear productos pensados para el cuidado diario del rostro.
-              Nuestra línea está inspirada en el equilibrio del microbioma y el
-              bienestar de la piel sensible.
-            </p>
-
-            <p>
-              We create microbiome friendly skincare products focused on gentle
-              cleansing, hydration, soothing care and balanced skin barrier
-              support for everyday use.
-            </p>
-
-            <a
-              href={instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram oficial de Lyro Biome
-            </a>
           </div>
         </div>
       </section>
@@ -401,23 +332,64 @@ const schema = {
         <h1>
           Tu rutina empieza cuidando tu
           <span class="magic">
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                ></path>
+              </svg>
+            </span>
+
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                ></path>
+              </svg>
+            </span>
+
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                ></path>
+              </svg>
+            </span>
+
             <span class="magic-text">microbioma</span>
           </span>
           y su
           <span class="magic">
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                ></path>
+              </svg>
+            </span>
+
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                ></path>
+              </svg>
+            </span>
+
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                ></path>
+              </svg>
+            </span>
+
             <span class="magic-text">equilibrio natural</span>
           </span>
           .
         </h1>
 
-        <p>
-          Sensitive skin skincare • Microbiome skincare • Hydrating skincare •
-          Skin barrier support • Gentle daily skincare • Healthy glow skincare
-        </p>
-
-        <a class="footerButton" href="#products">
-          Ver productos
-        </a>
+        <a class="footerButton" href="#products">Ver productos</a>
       </section>
     </main>
 
