@@ -43,7 +43,7 @@
   height: auto;
   display: block;
 
-  filter: brightness(100);
+  filter: brightness(10000);
 }
 
 .navLinks {
